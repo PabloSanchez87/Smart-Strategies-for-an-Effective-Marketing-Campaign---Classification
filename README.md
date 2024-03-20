@@ -68,7 +68,8 @@ nuwe-data-ds1/
 
 
 ```
-
+- `test/`: Folder containing the user and session data for model validation.
+- `train/`: Folder containing the user and session data for model training
 
 ## ✅ Tasks
 
