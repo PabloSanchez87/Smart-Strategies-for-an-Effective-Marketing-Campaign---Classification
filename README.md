@@ -1,13 +1,12 @@
-## 📈 Smart Strategies for an Effective Marketing Campaign 🚀
+# 📈 Smart Strategies for an Effective Marketing Campaign 🚀
 
-### Category   ➡️   Data
+Category   ➡️   Data Science
 
-### Subcategory   ➡️   Data Scientist
+Subcategory   ➡️   Data Scientist
 
-### Difficulty   ➡️   (Basic)
+Difficulty   ➡️   Easy
 
-
-## 🌍 Background
+## 🌐 Background
 
 Welcome to the digital heart of the modern era, where information flows boundlessly, and businesses continuously seek innovative ways to capture customer attention. "ClickStream," a budding enterprise in the competitive e-commerce space, grapples with the challenge of understanding its users to serve them better. Recognizing that an engaged customer is the linchpin of growth, ClickStream is keen to deploy smarter marketing strategies.
 
@@ -18,11 +17,11 @@ Your role as a data scientist is pivotal. By deciphering user behavior patterns,
 ![Image](https://cdn.nuwe.io/infojobs-data/__images/DS1_ClientSegmentation.jpeg)
 
 
-## 📁 Datasets
+### 🗂️ Dataset 
 
 You'll be equipped with two detailed datasets, offering a deep dive into user interactions with the ClickStream platform.
 
-### 1. `user_data.csv` - User Data
+#### 1. `user_data.csv` - User Data
 
 This set embodies user demographic and behavior details. Each row corresponds to a unique user.
 
@@ -31,11 +30,11 @@ This set embodies user demographic and behavior details. Each row corresponds to
 - `abandoned_cart`: Whether the user has left a shopping cart without making a purchase (True/False).
 - `user_category`: User category based on their history (new_user, recurring_user, premium_subscriber).
 
-### 2. `session_data.csv` - Session Data
+#### 2. `session_data.csv` - Session Data
 
 This table delineates specifics about individual user browsing sessions. Each row represents a distinct session.
 
-- `user_id`: The unique user identifier for the session.
+- `user_id`: The unique user identifier for the user.
 - `session_id`: The unique session identifier.
 - `timestamp`: The date and time the session commenced.
 - `device_type`: Device type used (mobile, tablet, desktop).
@@ -48,7 +47,7 @@ This table delineates specifics about individual user browsing sessions. Each ro
 - `session_duration`: The session's total duration in seconds.
 
 
-## 🗄️ Repo Structure:
+## 📂 Repository Structure
 
 The repository structure is provided and must be adhered to strictly:
 
@@ -71,7 +70,7 @@ nuwe-data-ds1/
 - `test/`: Folder containing the user and session data for model validation.
 - `train/`: Folder containing the user and session data for model training
 
-## ✅ Tasks
+## 🎯 Tasks
 
 You're tasked with concocting a predictive model that, harnessing user behavioral data, can pinpoint patterns and guide the marketing team in user segmentation for future campaigns. This segmentation will empower ClickStream to channel its resources more adroitly and craft messages that resonate with diverse user types.
 
@@ -87,7 +86,7 @@ Your calculated `marketing_target` values will be crucial for the subsequent seg
 
 ## 📤 Submission
 
-To carry out this challenge, we expect to obtain a file in json format whose name is `predictions.json`, where we will have as key the test_id, from the file user_test.csv and as value the prediction of the marketing_target column that has as values 1,2 and 3 (low, medium, high).
+To carry out this challenge, we expect to obtain a file in json format whose name is `predictions.json`, where we will have as key the test_id, from the file user_test.csv and as value the prediction of the `marketing_target` column that has as values 1,2 and 3 (low, medium, high).
 predictions.json:
 ```json
 {
@@ -100,10 +99,7 @@ predictions.json:
         "290": 2,
         "193": 3,
         ...
-        "239": 1,
-        "173": 2,
-        "129": 1
-}
+  }
 }
 ```
 
@@ -118,7 +114,7 @@ Your predictions will be compared against the true values to calculate the preci
 Please ensure that your `predictions.json` file follows the correct format as specified in the practice guidelines. The automatic evaluation system will parse this file and apply the F1 Score calculation to determine your final assessment.
 
 **⚠️ Please note:**  
-All submissions will undergo a manual code review process to ensure that the work has been conducted honestly and adheres to the highest standards of academic integrity. Any form of dishonesty or misconduct will be addressed seriously, and may lead to disqualification from the challenge.
+All submissions might undergo a manual code review process to ensure that the work has been conducted honestly and adheres to the highest standards of academic integrity. Any form of dishonesty or misconduct will be addressed seriously, and may lead to disqualification from the challenge.
 The file to be evaluated will be **predictions.json**. This file must be inside **/predictions**.
 
 ## ❓ FAQs
