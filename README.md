@@ -6,6 +6,8 @@ Subcategory   ➡️   Data Scientist
 
 Difficulty   ➡️   Easy
 
+Expected solution time ➡️ 4 hours. **It is essential to complete your solution within this timeframe,** as it is a critical performance indicator used by the hiring company to evaluate your work. The timer will begin when you click the start button and will stop upon your submission.
+
 ## 🌐 Background
 
 Welcome to the digital heart of the modern era, where information flows boundlessly, and businesses continuously seek innovative ways to capture customer attention. "ClickStream," a budding enterprise in the competitive e-commerce space, grapples with the challenge of understanding its users to serve them better. Recognizing that an engaged customer is the linchpin of growth, ClickStream is keen to deploy smarter marketing strategies.
@@ -21,7 +23,7 @@ Your role as a data scientist is pivotal. By deciphering user behavior patterns,
 
 You'll be equipped with two detailed datasets, offering a deep dive into user interactions with the ClickStream platform.
 
-#### 1. `user_data.csv` - User Data
+1. `user_data.csv` - User Data
 
 This set embodies user demographic and behavior details. Each row corresponds to a unique user.
 
@@ -29,8 +31,8 @@ This set embodies user demographic and behavior details. Each row corresponds to
 - `age`: The user's age.
 - `abandoned_cart`: Whether the user has left a shopping cart without making a purchase (True/False).
 - `user_category`: User category based on their history (new_user, recurring_user, premium_subscriber).
-
-#### 2. `session_data.csv` - Session Data
+  
+2. `session_data.csv` - Session Data
 
 This table delineates specifics about individual user browsing sessions. Each row represents a distinct session.
 
@@ -46,6 +48,13 @@ This table delineates specifics about individual user browsing sessions. Each ro
 - `page_views`: Number of pages viewed during the session.
 - `session_duration`: The session's total duration in seconds.
 
+### 📊 Data Processing
+
+uring data processing, missing values should be handled, ensuring the dataset is complete and suitable for analysis. Participants are encouraged to user feature engineering techniques  to derive new features and transform existing ones, enhancing the model's predictive power. 
+
+### 🤖 Model
+
+You are at liberty to choose the classification algorithm. Whether it be a decision tree, random forest, or a more sophisticated ensemble or deep learning model, select the one that you believe will perform the best for this classification task.
 
 ## 📂 Repository Structure
 
@@ -76,7 +85,7 @@ You're tasked with concocting a predictive model that, harnessing user behaviora
 
 As part of your responsibilities for the ClickStream challenge, you are expected to perform the following key tasks:
 
-- **Calculate the `marketing_target` Column**: Utilize the provided datasets to compute and assign a `marketing_target` value for each user. This column should reflect the predicted engagement level of the user with the marketing campaign, with values assigned as follows:
+- Task 1: Calculate the `marketing_target` Column. Utilize the provided datasets to compute and assign a `marketing_target` value for each user. This column should reflect the predicted engagement level of the user with the marketing campaign, with values assigned as follows:
   - `1` for Low engagement
   - `2` for Medium engagement
   - `3` for High engagement
@@ -112,6 +121,8 @@ The F1 Score is a widely recognized statistical measure used in classification t
 Your predictions will be compared against the true values to calculate the precision and recall, from which the F1 Score will be derived. The closer your F1 Score is to 1, the better your model's performance is considered in terms of both accuracy and robustness.
 
 Please ensure that your `predictions.json` file follows the correct format as specified in the practice guidelines. The automatic evaluation system will parse this file and apply the F1 Score calculation to determine your final assessment.
+
+- Task 1: 900 points
 
 **⚠️ Please note:**  
 All submissions might undergo a manual code review process to ensure that the work has been conducted honestly and adheres to the highest standards of academic integrity. Any form of dishonesty or misconduct will be addressed seriously, and may lead to disqualification from the challenge.
